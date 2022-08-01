@@ -1,23 +1,30 @@
-body
-{
-    font-family: Arial;
-    background-color: bisque;
+body{
+    background-color: #f9e9cd;
 }
 
-.content
-{
-    background-color: black;
-    width: 300px;
-    padding: 40px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    color: aliceblue;
-    translate: ;
+h1{
+    font-size: 25px;
 }
 
-.content h1
-{
-    text-transform: uppercase;
+a:link{
+    color: lightblue;
+}
+
+a:visited{
+    color: #ee4866;
+}
+
+a:hover{
+    color: #22a2c3;
+    text-decoration-line: underline;
+}
+
+a:active{
+    color: blue;
+}
+
+a{
+    text-decoration-line: none;
+    font-size: 20px;
+    text-decoration: wavy;
 }
