@@ -1,17 +1,115 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Millions迷恋 收藏主页</title>
-        <meta=UTF-8>
-        <link rel="stylesheet" href="style.css" />
-        <base target="_blank">
+        <title></title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <h1>好玩就完了</h1>
-        <a href="https://aidn.jp/mikutap/">Mikutap</a><nobr> - 初音模拟器</nobr>
+        <h1>这是一个练习网站</h1>
+        <hr />
+        <p>这是一个段落，下面用br标签生成一个空行</p>
         <br />
-        <a href="https://pranx.com/">Just Pranx</a><nobr> - 恶搞模拟器</nobr>
-        <h1>免费就完了</h1>
-        <a href="https://www.dm530p.cc/">风车动漫</a>
+        <p>需要避免的属性有center、font、basefont、s、strike、u、align、bgcolor和color</p>
+        <p>为了证明上面确实是一个空行，这边我再设置一个p标签</p>
+        <p style="background-color: red;">这里我用内联style属性给背景颜色设置为红色</p>
+        <p style="font-family: 华文新魏;">这里我用内联style属性给字体设置为华文新魏</p>
+        <p style="color: red;">这里我用内联style属性给字体颜色设置为红色，虽然不知道为什么它说不能用color定义但还是用的color</p>
+        <p style="font-size: 20px;">这里我用内联style属性给字体大小设置为20个像素</p>
+        <p style="text-align: center;">这里我用内联style属性将段落设置为居中</p>
+        <q cite="www.baidu.com">这是一个短引用</q>
+        <blockquote cite="www.bing.com">这是一个长引用，它会自动缩进，没换行的也会换行</blockquote>
+        <p><abbr title="我带你们打">wdnmd</abbr>，这是一个缩写，可以引出注释，并且下面带有虚线</p>
+        <p><def title="我叼你嘛的">wdnmd</def>，这是一个定义，同样可以引出注释而不带虚线</p>
+        <address>address标签可以用来编写联系方式，并以斜体呈现</address>
+        <p><cite>《书》</cite>，这里用cite标签搞书名，同样是斜体</p>
+        <bdo dir="rtl">这里用bdo覆盖文本dir为从右至左</bdo>
+        <p>外部样式表用link rel="stylesheet" type="css/text" href ="css文件"</p>
+        <p>内部样式表用style type="css/text"</p>
+        <a href="https://www.baidu.com/">这是百度的超链接，会在本页打开</a><br />
+        <a href="https://www.baidu.com/" target="_blank">这是百度的超链接，会在新标签页打开</a>
+        <p>下面是一张鸟的图片，如果无法加载图像，会显示文本“小鸟”</p>
+        <img src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fimg.zcool.cn%2Fcommunity%2F0128f25549674a0000019ae9fd1185.jpg&refer=http%3A%2F%2Fimg.zcool.cn&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1662727362&t=97685e35a7fff810bf5e625e95b0beb9" alt="小鸟" width="200px" />
+        <p>文本中的图像默认显示为bottom，如果需要更改可以添加align属性</p>
+        <p>图像的大小用width和height调整</p>
+        <a href="https:www.baidu.com/"><img src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fimg.zcool.cn%2Fcommunity%2F0128f25549674a0000019ae9fd1185.jpg&refer=http%3A%2F%2Fimg.zcool.cn&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1662727362&t=97685e35a7fff810bf5e625e95b0beb9" width="200px"></a><p>点击该图片访问百度</p>
+        <p>通过area标签，并设置其中的shape，coords，href，target，alt等属性，可以在图片内部形成超链接</p>
+        <p>这是一个表格</p>
+        <table border="1">
+            <tr>
+                <th>标题1</th>
+                <th>标题2</th>
+            </tr>
+            <tr>
+                <td>第一行第一列</td>
+                <td>第一行第二列</td>
+            </tr>
+            <tr>
+                <td>第二行第一列</td>
+                <td>第二行第二列</td>
+            </tr>
+        </table>
+        <p>如果单元格为空，边框据说可能无法显示，最好添加一个空格占位符（虽然这边在chrome正常显示了）</p>
+        <table border="1">
+            <tr>
+                <th>标题1</th>
+                <th>标题2</th>
+            </tr>
+            <tr>
+                <td>第一行第一列</td>
+                <td>第一行第二列</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>第二行第二列</td>
+            </tr>
+        </table>
+        <p>如果需要合并单元格，可以用colspan和rowspan去定义占几个单元格</p>
+        <table border="1">
+            <tr>
+                <th colspan="2">标题1</th>
+            </tr>
+            <tr>
+                <td rowspan="2">第一行第一列</td>
+                <td>第一行第二列</td>
+            </tr>
+            <tr>
+                <td>第二行第二列</td>
+            </tr>
+        </table>
+        <p>表格里面可以内嵌</p>
+        <table border="1">
+            <tr>
+                <td>
+                    <p>内嵌段落</p>
+                </td>
+                <td>
+                    <p>内嵌表格</p>
+                    <table>
+                        <tr>
+                            <td>A</td>
+                            <td>B</td>
+                        </tr>
+                        <tr>
+                            <td>C</td>
+                            <td>D</td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>内嵌一个列表</p>
+                    <ul>
+                        <li>A</li>
+                        <li>B</li>
+                        <li>C</li>
+                        <li>D</li>
+                    </ul>
+                </td>
+                <td><em>随便吧</em></td>
+            </tr>
+            </table>
+        <!-- 这是一段注释 -->
     </body>
 </html>
